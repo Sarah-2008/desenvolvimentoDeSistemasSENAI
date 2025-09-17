@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: bisque;
+}
+
+header{
+    display: flex;
+    padding: 10px 0px;
+    background-color: rgba(58, 209, 116, 0.733);
+    justify-content: space-between;
+}
+
+header div {
+    margin: 0px;
+    padding: 30px;
+    align-items: center;
+
+}
+
+header img{
+    width: 80px;
+}
+
+.pai{
+    width: 800px;
+    height: 400px;
+    background-color: rgb(194, 44, 44);
+    /* display - modo de mostrar na tela */
+    /* flex - felxivel */
+    padding: 2px;
+    /* margen da horizontal */
+    display: flex;
+    /* direção dos itens */ /* row - linha */
+    /* column - coluna */
+    flex-direction: column;
+    /* justify (justificar) - x */
+    /* end - direita */
+    /* start - esquerda */
+    justify-content: center;
+    /* aling (alinha) - y */
+    align-items: center;
+    /* wrap - ajustar (nowrap amassa, wrap organiza) */
+    flex-wrap: wrap;
+}
+
+.caixa{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(61, 182, 135);
+}
