@@ -19,13 +19,17 @@ header div {
     margin: 0px;
     padding: 30px;
     align-items: center;
-
+    
 }
 
 header img{
     width: 80px;
 }
-
+main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 .pai{
     width: 800px;
     height: 400px;
@@ -46,6 +50,7 @@ header img{
     align-items: center;
     /* wrap - ajustar (nowrap amassa, wrap organiza) */
     flex-wrap: wrap;
+
 }
 
 .caixa{
