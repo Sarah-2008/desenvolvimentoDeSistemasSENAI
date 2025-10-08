@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../styles/all.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+</head>
+<body>
+    <main>
+        <div id="bannerCadastro"></div>
+        <div id="formularioCadastro">
+            <form method="get" action="#">
+                <!--Colocar NOME-->
+                <div class="inputLabel">
+                    <label for="nome">Digite seu nome: </label>
+                    <input required id="nome" placeholder="Ex: Lucas Chuca Gomes"  type="text">
+                </div>
+                <!--EMAIL-->
+                <div class="inputLabel">
+                    <label for="EMAIL">Digite seu email: </label>
+                    <input required id="EMAIL" placeholder="Ex: chucagomes@gmail.com"  type="email">
+                </div>
+                <!-- senha -->
+                 <div class="inputLabel">
+                    <label for="senha">Digite sua senha: </label>
+                    <input required id="senha" placeholder="Ex: 1234"  type="password">
+                </div>
+                <!-- idade -->
+                 <div class="inputLabel">
+                    <label for="idade">Digite sua idade: </label>
+                    <input min="7" max="200" required id="idade"  step="1" placeholder="Ex: 34"  type="number">
+                </div>
+
+
+                <!-- botão de resetar e de cadastrar o usuario -->
+                <div class="inputLabel">
+                    <!-- <input type="button" value="cadastrar "> -->
+                    <button type="submit">Cadastrar</button>
+                    <button type="reset">Resetar</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
