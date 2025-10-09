@@ -9,20 +9,46 @@ table{
     background-color: #0d5188;
     font-size: 12px;
     border-collapse: collapse;
-    justify-content: center;
+    
 }
 #titulo{
     color: white;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
 #comeco{
     background-color: #66c5e3;
     border: 1px #c7e7f3;
+    margin: 15%;
 }
 
 #parteDeCima{
     background-color: #c7e7f3;
 }
+
+#cidade{
+    color: #0d5188;
+    font-weight: bold;
+}
+
+#posição{
+    background-color: rgb(192, 192, 192);
+}
+
+th{
+    border: 1px solid #c7e7f3;
+    text-align: center;
+
+}
+
+td{
+    border: 1px solid c7e7f3;
+    text-align: center;
+    
+}
+
 
 
 
