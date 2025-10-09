@@ -4,18 +4,18 @@
 }
 
 table{
+    margin: 2px;
+    padding: 2px;
     width: 600px;
-    height: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     background-color: #0d5188;
     border-collapse: collapse;
-    text-align: center;
-    
+    justify-content: center;
 }
+/* CONFIGURAÇÃO DOS ID'S */
 #titulo{
     color: white;
-    text-align: center;
     justify-content: center;
     font-weight: bold;
 }
@@ -23,7 +23,7 @@ table{
 #comeco{
     background-color: #66c5e3;
     border: 1px solid #c7e7f3;
-    margin: 15%;
+    font-weight: bold;
 }
 
 #parteDeCima{
@@ -44,17 +44,19 @@ table{
 #população{
     height: 15%;
 }
-
+/* CONFIGURAÇÃO DAS COLUNAS */
 th{
+    margin: 2px;
+    padding: 2px;
     border: 1px solid #c7e7f3;
     text-align: center;
-
 }
 
 td{
-    border: 1px solid c7e7f3;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid #c7e7f3;
     text-align: center;
-    
 }
 
 
