@@ -1,0 +1,45 @@
+@font-face{
+    font-family: warm_winter;
+    src: url(../Fonts/warm_winter/Warm\ Winter.ttf);
+}
+
+:root{
+    --background : rgb(34,97);
+    --fontPrimaria : warm_winter;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: rgb(252, 141, 141);
+}
+ h1{
+    font-family: var(--fontPrimaria), Arial, Helvetica, sans-serif;
+ }
+
+ p{
+    font-family: "Lora", serif;
+ }
+
+
+#foto{
+    display: flex;
+    background-size: contain;
+    height: 200px;
+    background-image: url(../image/image.jpg);
+}
+.sla{
+    animation: animacao 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacao{
+    from{
+        transform: rotate(380deg);
+    }
+    25%{
+        transform: rotate(-80deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}

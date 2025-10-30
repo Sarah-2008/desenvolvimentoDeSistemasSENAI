@@ -1,2 +1,1 @@
-# desenvolvimentoDeSistemasSENAI
- repositório para materiais didáticos
+Tarefas do senai
