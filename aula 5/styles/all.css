@@ -47,3 +47,19 @@ footer{
     background-color: var(--corPrimaria);
     color: var(--textosheader);
 }
+
+@media screen and (max-width: 900px) {
+    body{
+        background-color: rgb(255, 255, 0);
+    }
+
+    header{
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    #bannerTexto{
+        width: 500px;
+        flex-wrap: wrap;
+    }
+}
