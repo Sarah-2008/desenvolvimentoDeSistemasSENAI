@@ -1,29 +1,23 @@
--- primeiro codigo de banco de dados do Thom 
-
 CREATE DATABASE IF NOT EXISTS lojinha;
-
 USE lojinha;
 
-CREATE TABLE Clientes (
-    idCliente INT(99999),
-    nome VARCHAR(40),
+CREATE TABLE IF NOT EXISTS Cliente (
+	idCliente INT(255),
+    cpf INT(10),
     email VARCHAR(120),
-    telefone VARCHAR(20)
+    telefone VARCHAR(40)
+);
+    
+CREATE TABLE IF NOT EXISTS Produto (
+	idProduto INT(255),
+	nomeProduto VARCHAR (29),
+    preco DECIMAL(56,9),
+    estoque VARCHAR(30)
 );
 
-
-CREATE TABLE Produtos (
-    idProduto INT(9999999),
-    nomeProduto VARCHAR(100),
-    preco DECIMAL(600,2),
-    estoque INT(9999)
+CREATE TABLE IF NOT EXISTS Pedido (
+	idPedido INT(255),
+    IdCliente INT(255),
+    idProduto INT(255),
+    quantidade INT(255)
 );
-
-
-CREATE TABLE Pedidos (
-    idPedido INT(9999999),
-    idCiente INT(99999999),
-    idProduto INT(99999999),
-    quantidade INT(999)
-);
-
