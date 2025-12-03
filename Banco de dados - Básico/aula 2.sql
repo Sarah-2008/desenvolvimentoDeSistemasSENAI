@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS lojinha;
 USE lojinha;
-
+-- estava dando erro por causa da falta do "if not exists" para o código parar de rodar
 CREATE TABLE IF NOT EXISTS Cliente (
 	idCliente INT(255),
     cpf INT(10),
