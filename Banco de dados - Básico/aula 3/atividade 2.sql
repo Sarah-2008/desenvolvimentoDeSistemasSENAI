@@ -1,0 +1,68 @@
+CREATE DATABASE IF NOT EXISTS escola;
+USE escola;
+
+CREATE TABLE IF NOT EXISTS aluno (
+	id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(40) NOT NULL,
+    genero ENUM("feminino", "masculino"),
+    cpf INT(10) NOT NULL UNIQUE,
+	matricula INT(12) NOT NULL UNIQUE,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS professores (
+	id INT NOT NULL AUTO_INCREMENT, 
+    nome VARCHAR(100) NOT NULL,
+    genero ENUM("feminino", "masculino")
+    materia VARCHAR(100) NOT NULL,	
+    cpf INT(20) NOT NULL UNIQUE,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS cursos (
+	id INT NOT NULL AUTO_INCREMENT,
+    tipo VARCHAR (99) NOT NULL,
+    horas INT(2) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS turmas (
+	id INT NOT NULL AUTO_INCREMENT,
+    alunos VARCHAR(20) NOT NULL,
+    curso VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS disciplinas (
+	id INT NOT NULL AUTO_INCREMENT,
+    professores VARCHAR(50) NOT NULL,
+    cursos VARCHAR(20) NOT NULL,
+    materia VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS aulas (
+	id INT NOT NULL AUTO_INCREMENT,
+    horas INT(2) NOT NULL,
+    materia VARCHAR(99) NOT NULL,
+    turma VARCHAR(40) NOT NULL,
+    lugar VARCHAR(99) NOT NULL DEFAULT "senai",
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS matriculas (
+	id INT NOT NULL AUTO_INCREMENT,
+    alunos VARCHAR(99) NOT NULL,
+    turma VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS presencas (
+	id INT NOT NULL AUTO_INCREMENT,
+    alunos VARCHAR(40) NOT NULL,
+    matricula VARCHAR(40) NOT NULL UNIQUE,
+    turma VARCHAR(20) NOT NULL,
+    curso VARCHAR(20) NOT NULL,
+    materia VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id)
+);
